@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <omp.h>
 
 int main(int argc, char** argv) {
-    int random_seed = 920215;
     const int count = 10000000;     ///< Number of array elements
     const int threads = 16;         ///< Number of parallel threads to use
     const int random_seed = 920215; ///< RNG seed
